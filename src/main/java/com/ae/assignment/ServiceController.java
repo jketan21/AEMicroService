@@ -26,8 +26,6 @@ public class ServiceController {
 
 	@PostMapping("/userinfo")
 	 public void userInfo(@RequestBody UserInfo user) {
-//		user.setUserName(user.getUserName());
-//		user.setCity(user.getCity());
 		queue.add(user);
 		System.out.println(" user info ");
 		
